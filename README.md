@@ -6,6 +6,7 @@ Gaussian elimination, also known as row reduction, is an algorithm in linear alg
 
 ## Usage
 
+Java : 
 ```java
 int[][] matrix = {{2,1,-1,8},
                   {-3,-1,2,-11},
@@ -13,6 +14,16 @@ int[][] matrix = {{2,1,-1,8},
 
 matrix = GaussJordanEliminate.solve(matrix);
 System.out.println(Arrays.toString(GaussJordanEliminate.extractAnswers(matrix)));
+```
+
+Swift :
+```swift
+var matrix = [[2,1,-1,8],
+              [-3,-1,2,-11],
+              [-2,1,2,-3]]
+        
+matrix = GaussJordanEliminate.solve(matrix)
+print(GaussJordanEliminate.extractAnswers(matrix))
 ```
 
 ![Image](https://wikimedia.org/api/rest_v1/media/math/render/svg/143d91265d57a1d2bd91ef95aec9f2e466ba411b) : ![Image](https://wikimedia.org/api/rest_v1/media/math/render/svg/158d23387edac419ba2e00a3b6bcf0f400779f2c)
